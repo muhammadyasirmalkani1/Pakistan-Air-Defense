@@ -184,7 +184,7 @@ export default function JointOperationsPage() {
                 </div>
                 <div className="relative min-h-[300px] rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/img/Counter-Terrorism.jpg?height=400&width=600"
                     alt="Counter-Terrorism Operations"
                     fill
                     className="object-cover"
