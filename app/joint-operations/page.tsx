@@ -231,7 +231,7 @@ export default function JointOperationsPage() {
                 </div>
                 <div className="relative min-h-[300px] rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/img/Humanitarian-Assistance.jpg?height=400&width=600"
                     alt="Humanitarian Assistance"
                     fill
                     className="object-cover"
@@ -252,7 +252,7 @@ export default function JointOperationsPage() {
             <Card>
               <div className="relative w-full h-48">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src="/img/Exercise-Azm-e-Nau.jpeg?height=300&width=500"
                   alt="Exercise Azm-e-Nau"
                   fill
                   className="object-cover rounded-t-lg"
@@ -277,7 +277,7 @@ export default function JointOperationsPage() {
             <Card>
               <div className="relative w-full h-48">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src="/img/Exercise-Sea-Spark.webp?height=300&width=500"
                   alt="Exercise Sea Spark"
                   fill
                   className="object-cover rounded-t-lg"
@@ -301,7 +301,7 @@ export default function JointOperationsPage() {
             <Card>
               <div className="relative w-full h-48">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src="/img/Exercise-High-Mark.webp?height=300&width=500"
                   alt="Exercise High Mark"
                   fill
                   className="object-cover rounded-t-lg"
@@ -325,7 +325,7 @@ export default function JointOperationsPage() {
             <Card>
               <div className="relative w-full h-48">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src="/img/Raad-ul-Barq.jpg?height=300&width=500"
                   alt="Exercise Raad-ul-Barq"
                   fill
                   className="object-cover rounded-t-lg"
@@ -348,7 +348,7 @@ export default function JointOperationsPage() {
             <Card>
               <div className="relative w-full h-48">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src="/img/Shamsheer-e-Bahr.jpeg?height=300&width=500"
                   alt="Exercise Shamsheer-e-Bahr"
                   fill
                   className="object-cover rounded-t-lg"
