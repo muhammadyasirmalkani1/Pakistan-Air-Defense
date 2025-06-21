@@ -70,7 +70,7 @@ export default function HistoryPage() {
                 </p>
                 <div className="relative w-full mt-4 overflow-hidden rounded-lg h-60">
                   <Image
-                    src="/image/history.jpg?height=300&width=600"
+                    src="/img/history.jpg?height=300&width=600"
                     alt="Development period of Pakistan Air Defense"
                     fill
                     className="object-cover"
