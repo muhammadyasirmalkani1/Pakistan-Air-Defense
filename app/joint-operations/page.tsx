@@ -372,7 +372,7 @@ export default function JointOperationsPage() {
             <Card>
               <div className="relative w-full h-48">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src="/img/Jura-ul-Bahr.jpeg?height=300&width=500"
                   alt="Exercise Jura-ul-Bahr"
                   fill
                   className="object-cover rounded-t-lg"
@@ -439,7 +439,7 @@ export default function JointOperationsPage() {
             </div>
             <div className="relative min-h-[500px] rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/img/Leaders.jpg?height=600&width=800"
                 alt="Joint Military Operations"
                 fill
                 className="object-cover"

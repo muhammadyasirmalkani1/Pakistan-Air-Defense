@@ -18,7 +18,7 @@ export default function TrainingPage() {
       <div className="relative max-w-4xl mx-auto mb-16">
         <div className="relative w-full overflow-hidden rounded-lg h-80">
           <Image
-            src="/placeholder.svg?height=500&width=1000"
+            src="/img/pak-army-5.jpg?height=500&width=1000"
             alt="Air Defense Training"
             fill
             className="object-cover"
@@ -57,7 +57,7 @@ export default function TrainingPage() {
               <Button className="bg-green-600 hover:bg-green-700">Learn More</Button>
             </div>
             <div className="relative overflow-hidden rounded-lg h-80">
-              <Image src="/placeholder.svg?height=400&width=600" alt="Basic Training" fill className="object-cover" />
+              <Image src="/img/air-force.avif?height=400&width=600" alt="Basic Training" fill className="object-cover" />
             </div>
           </div>
         </TabsContent>
@@ -66,7 +66,7 @@ export default function TrainingPage() {
           <div className="grid gap-6 md:grid-cols-2">
             <div className="relative overflow-hidden rounded-lg h-80">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/img/Basic-Air-Defense-Training.avif?height=400&width=600"
                 alt="Advanced Training"
                 fill
                 className="object-cover"
@@ -106,37 +106,37 @@ export default function TrainingPage() {
                   title: "Radar Specialist Course",
                   description: "In-depth training on radar systems operation, maintenance, and troubleshooting.",
                   duration: "12 weeks",
-                  image: "/placeholder.svg?height=300&width=400",
+                  image: "/img/Radar-Specialist-Course.png?height=300&width=400",
                 },
                 {
                   title: "SAM System Operator Course",
                   description: "Specialized training for surface-to-air missile system operators.",
                   duration: "16 weeks",
-                  image: "/placeholder.svg?height=300&width=400",
+                  image: "/img/Electronic-Warfare.jpg?height=300&width=400",
                 },
                 {
                   title: "Air Defense Command Course",
                   description: "Leadership and command training for air defense unit commanders.",
                   duration: "20 weeks",
-                  image: "/placeholder.svg?height=300&width=400",
+                  image: "/img/air-defence.webp?height=300&width=400",
                 },
                 {
                   title: "Electronic Warfare Course",
                   description: "Training in electronic countermeasures and counter-countermeasures.",
                   duration: "14 weeks",
-                  image: "/placeholder.svg?height=300&width=400",
+                  image: "/img/Electronic-Warfare-Course.jpg?height=300&width=400",
                 },
                 {
                   title: "Air Battle Management Course",
                   description: "Advanced training in coordinating air defense assets during complex scenarios.",
                   duration: "18 weeks",
-                  image: "/placeholder.svg?height=300&width=400",
+                  image: "/img/Air-Battle-Management-Course.jpg?height=300&width=400",
                 },
                 {
                   title: "Technical Maintenance Course",
                   description: "Comprehensive training in maintaining and repairing air defense equipment.",
                   duration: "24 weeks",
-                  image: "/placeholder.svg?height=300&width=400",
+                  image: "/img/Technical-Maintenance-Course.jpg?height=300&width=400",
                 },
               ].map((course, index) => (
                 <Card key={index}>

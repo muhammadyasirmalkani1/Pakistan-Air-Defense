@@ -21,7 +21,7 @@ export default function HistoryPage() {
       <div className="relative max-w-4xl mx-auto">
         <div className="relative w-full overflow-hidden rounded-lg h-80">
           <Image
-            src="/placeholder.svg?height=500&width=1000"
+            src="/img/Pakistan-Air-Defense-1947.jpeg?height=500&width=1000"
             alt="Historical image of Pakistan Air Defense"
             fill
             className="object-cover"
@@ -48,7 +48,7 @@ export default function HistoryPage() {
                 </p>
                 <div className="relative w-full mt-4 overflow-hidden rounded-lg h-60">
                   <Image
-                    src="/placeholder.svg?height=300&width=600"
+                    src="/img/pakistan-1947-1950.jpg?height=300&width=600"
                     alt="Early years of Pakistan Air Defense"
                     fill
                     className="object-cover"
@@ -70,7 +70,7 @@ export default function HistoryPage() {
                 </p>
                 <div className="relative w-full mt-4 overflow-hidden rounded-lg h-60">
                   <Image
-                    src="/placeholder.svg?height=300&width=600"
+                    src="/image/history.jpg?height=300&width=600"
                     alt="Development period of Pakistan Air Defense"
                     fill
                     className="object-cover"
