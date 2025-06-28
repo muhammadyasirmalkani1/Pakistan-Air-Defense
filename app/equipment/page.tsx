@@ -32,18 +32,18 @@ export default function EquipmentPage() {
                 title: "Medium Range Tracking Radar",
                 description:
                   "Precision tracking radars for guiding missile systems to their targets with high accuracy.",
-                image: "/placeholder.svg?height=300&width=400",
+                image: "/img/Medium-Range-Tracking-Radar.webp?height=300&width=400",
               },
               {
                 title: "Low Altitude Detection Radar",
                 description: "Specialized radar systems designed to detect low-flying aircraft and cruise missiles.",
-                image: "/placeholder.svg?height=300&width=400",
+                image: "/img/Low-Altitude-Detection-Radar.avif?height=300&width=400",
               },
               {
                 title: "Mobile Radar Units",
                 description:
                   "Rapidly deployable radar systems that can be positioned according to tactical requirements.",
-                image: "/placeholder.svg?height=300&width=400",
+                image: "/img/Mobile-Radar-Units.jpg?height=300&width=400",
               },
             ].map((item, index) => (
               <Card key={index}>
@@ -113,12 +113,12 @@ export default function EquipmentPage() {
               {
                 title: "Anti-Aircraft Guns",
                 description: "Rapid-fire guns designed to engage low-flying aircraft and helicopters.",
-                image: "/img/Anti-Aircraft-Guns.jpg?height=300&width=400",
+                image: "/img/Self-Propelled-Anti-Aircraft-Systems.jpeg?height=300&width=400",
               },
               {
                 title: "Self-Propelled Anti-Aircraft Systems",
                 description: "Mobile gun systems mounted on armored vehicles for battlefield air defense.",
-                image: "/img/Self-Propelled-Anti-Aircraft-Systems.jpeg?height=300&width=400",
+                image: "/img/Anti-Aircraft-Guns.jpg?height=300&width=400",
               },
               {
                 title: "Automated Anti-Aircraft Systems",
