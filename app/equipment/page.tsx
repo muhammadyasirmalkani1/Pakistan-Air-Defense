@@ -26,7 +26,7 @@ export default function EquipmentPage() {
               {
                 title: "Long Range Surveillance Radar",
                 description: "Advanced radar systems capable of detecting aerial threats at distances exceeding 300km.",
-                image: "/placeholder.svg?height=300&width=400",
+                image: "/img/Radar-Systems.jpeg?height=300&width=400",
               },
               {
                 title: "Medium Range Tracking Radar",
@@ -70,23 +70,23 @@ export default function EquipmentPage() {
               {
                 title: "Long-Range Surface-to-Air Missiles",
                 description: "Capable of engaging targets at distances of up to 200km and altitudes exceeding 30km.",
-                image: "/placeholder.svg?height=300&width=400",
+                image: "/img/Missile-Systems.avif?height=300&width=400",
               },
               {
                 title: "Medium-Range Air Defense Systems",
                 description:
                   "Versatile systems effective against aircraft, helicopters, and cruise missiles at medium ranges.",
-                image: "/placeholder.svg?height=300&width=400",
+                image: "/img/Missile-Systems3.jpg?height=300&width=400",
               },
               {
                 title: "Short-Range Air Defense Systems",
                 description: "Highly mobile systems designed for point defense of critical installations.",
-                image: "/placeholder.svg?height=300&width=400",
+                image: "/img/Missile-Systems2.avif?height=300&width=400",
               },
               {
                 title: "Man-Portable Air Defense Systems",
                 description: "Shoulder-launched missiles for infantry units to provide air defense capability.",
-                image: "/placeholder.svg?height=300&width=400",
+                image: "/img/Missile-Systems5.avif.webp?height=300&width=400",
               },
             ].map((item, index) => (
               <Card key={index}>
