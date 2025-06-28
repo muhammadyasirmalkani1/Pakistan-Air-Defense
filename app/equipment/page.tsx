@@ -113,22 +113,22 @@ export default function EquipmentPage() {
               {
                 title: "Anti-Aircraft Guns",
                 description: "Rapid-fire guns designed to engage low-flying aircraft and helicopters.",
-                image: "/placeholder.svg?height=300&width=400",
+                image: "/img/Anti-Aircraft-Guns.jpg?height=300&width=400",
               },
               {
                 title: "Self-Propelled Anti-Aircraft Systems",
                 description: "Mobile gun systems mounted on armored vehicles for battlefield air defense.",
-                image: "/placeholder.svg?height=300&width=400",
+                image: "/img/Self-Propelled-Anti-Aircraft-Systems.jpeg?height=300&width=400",
               },
               {
                 title: "Automated Anti-Aircraft Systems",
                 description: "Computer-controlled gun systems with integrated radar for autonomous operation.",
-                image: "/placeholder.svg?height=300&width=400",
+                image: "/img/Automated-Anti-Aircraft Systems.webp?height=300&width=400",
               },
               {
                 title: "Multi-Barrel Anti-Aircraft Systems",
                 description: "High rate of fire systems capable of creating dense defensive fire zones.",
-                image: "/placeholder.svg?height=300&width=400",
+                image: "/img/Multi-Barrel-Anti-Aircraft-Systems.JPG?height=300&width=400",
               },
             ].map((item, index) => (
               <Card key={index}>
