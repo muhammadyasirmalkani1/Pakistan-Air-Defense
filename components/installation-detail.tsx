@@ -1,63 +1,66 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { X, MapPin, Calendar, List } from "lucide-react"
-import type { Installation } from "@/app/installations/page"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { X, MapPin, Calendar, List } from "lucide-react";
+import type { Installation } from "@/app/installations/page";
 
 interface InstallationDetailProps {
-  installation: Installation
-  onClose: () => void
+  installation: Installation;
+  onClose: () => void;
 }
 
-export function InstallationDetail({ installation, onClose }: InstallationDetailProps) {
+export function InstallationDetail({
+  installation,
+  onClose,
+}: InstallationDetailProps) {
   const getBranchColor = (branch: string) => {
     switch (branch) {
       case "army":
-        return "bg-green-600"
+        return "bg-green-600";
       case "navy":
-        return "bg-blue-600"
+        return "bg-blue-600";
       case "airforce":
-        return "bg-indigo-600"
+        return "bg-indigo-600";
       case "joint":
-        return "bg-purple-600"
+        return "bg-purple-600";
       default:
-        return "bg-gray-600"
+        return "bg-gray-600";
     }
-  }
+  };
 
   const getBranchLink = (branch: string) => {
     switch (branch) {
       case "army":
-        return "/army"
+        return "/army";
       case "navy":
-        return "/navy"
+        return "/navy";
       case "airforce":
-        return "/air-force"
+        return "/air-force";
       case "joint":
-        return "/joint-operations"
+        return "/joint-operations";
       default:
-        return "/"
+        return "/";
     }
-  }
+  };
 
   const getBranchName = (branch: string) => {
     switch (branch) {
       case "army":
-        return "Army"
+        return "Army";
       case "navy":
-        return "Navy"
+        return "Navy";
       case "airforce":
-        return "Air Force"
+        return "Air Force";
       case "joint":
-        return "Joint Forces"
+        return "Joint Forces";
       default:
-        return "Unknown"
+        return "Unknown";
     }
-  }
+  };
 
   return (
     <Card>
@@ -65,7 +68,9 @@ export function InstallationDetail({ installation, onClose }: InstallationDetail
         <div>
           <CardTitle className="text-2xl">{installation.name}</CardTitle>
           <div className="flex flex-wrap gap-2 mt-2">
-            <Badge className={getBranchColor(installation.branch)}>{getBranchName(installation.branch)}</Badge>
+            <Badge className={getBranchColor(installation.branch)}>
+              {getBranchName(installation.branch)}
+            </Badge>
             <Badge variant="outline">{installation.type}</Badge>
           </div>
         </div>
@@ -121,7 +126,11 @@ export function InstallationDetail({ installation, onClose }: InstallationDetail
           <ul className="grid gap-2 md:grid-cols-2">
             {installation.facilities.map((facility, index) => (
               <li key={index} className="flex items-center">
-                <div className={`w-2 h-2 mr-2 rounded-full ${getBranchColor(installation.branch)}`}></div>
+                <div
+                  className={`w-2 h-2 mr-2 rounded-full ${getBranchColor(
+                    installation.branch
+                  )}`}
+                ></div>
                 <span className="text-gray-600">{facility}</span>
               </li>
             ))}
@@ -130,10 +139,12 @@ export function InstallationDetail({ installation, onClose }: InstallationDetail
 
         <div className="flex justify-end mt-6">
           <Button asChild variant="outline">
-            <Link href={getBranchLink(installation.branch)}>View {getBranchName(installation.branch)} Page</Link>
+            <Link href={getBranchLink(installation.branch)}>
+              View {getBranchName(installation.branch)} Page
+            </Link>
           </Button>
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }

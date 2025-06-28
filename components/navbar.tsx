@@ -1,12 +1,17 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { Menu, X, ChevronDown } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Menu, X, ChevronDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -27,10 +32,10 @@ const navLinks = [
   { name: "Training", href: "/training" },
   { name: "Recruitment", href: "/recruitment" },
   { name: "Contact", href: "/contact" },
-]
+];
 
 export default function Navbar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white border-b shadow-sm">
@@ -39,13 +44,15 @@ export default function Navbar() {
           <Link href="/" className="flex items-center">
             <div className="relative w-10 h-10 mr-2">
               <Image
-                src="/placeholder.svg?height=40&width=40"
+                src="/img/PAKISTAN-ARMY-LOGO.jpeg/?height=10&width=10"
                 alt="Pakistan Defense Forces Logo"
                 fill
                 className="object-contain"
               />
             </div>
-            <span className="hidden text-lg font-bold text-green-800 sm:inline-block">Pakistan Defense Forces</span>
+            <span className="hidden text-lg font-bold text-green-800 sm:inline-block">
+              Pakistan Forces
+            </span>
           </Link>
         </div>
 
@@ -66,7 +73,10 @@ export default function Navbar() {
                 <DropdownMenuContent align="end">
                   {link.dropdown.map((dropdownItem) => (
                     <DropdownMenuItem key={dropdownItem.name} asChild>
-                      <Link href={dropdownItem.href} className="flex w-full cursor-pointer">
+                      <Link
+                        href={dropdownItem.href}
+                        className="flex w-full cursor-pointer"
+                      >
                         {dropdownItem.name}
                       </Link>
                     </DropdownMenuItem>
@@ -81,9 +91,11 @@ export default function Navbar() {
               >
                 {link.name}
               </Link>
-            ),
+            )
           )}
-          <Button className="bg-green-600 hover:bg-green-700">Emergency Contact</Button>
+          <Button className="bg-green-600 hover:bg-green-700">
+            Emergency Contact
+          </Button>
         </div>
 
         {/* Mobile menu button */}
@@ -94,7 +106,11 @@ export default function Navbar() {
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </Button>
         </div>
       </nav>
@@ -103,14 +119,16 @@ export default function Navbar() {
       <div
         className={cn(
           "md:hidden fixed inset-0 z-40 w-full h-screen bg-white transform transition-transform duration-300 ease-in-out",
-          mobileMenuOpen ? "translate-x-0" : "translate-x-full",
+          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
         <div className="flex flex-col h-full p-4 pt-20">
           {navLinks.map((link) =>
             link.dropdown ? (
               <div key={link.name} className="py-2">
-                <p className="py-2 text-lg font-medium text-gray-900">{link.name}</p>
+                <p className="py-2 text-lg font-medium text-gray-900">
+                  {link.name}
+                </p>
                 <div className="pl-4 border-l border-gray-200">
                   {link.dropdown.map((dropdownItem) => (
                     <Link
@@ -133,11 +151,13 @@ export default function Navbar() {
               >
                 {link.name}
               </Link>
-            ),
+            )
           )}
-          <Button className="mt-6 bg-green-600 hover:bg-green-700">Emergency Contact</Button>
+          <Button className="mt-6 bg-green-600 hover:bg-green-700">
+            Emergency Contact
+          </Button>
         </div>
       </div>
     </header>
-  )
+  );
 }

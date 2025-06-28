@@ -1,6 +1,6 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Facebook, Twitter, Instagram, Youtube } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import { Facebook, Twitter, Instagram, Youtube } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -11,16 +11,19 @@ export default function Footer() {
             <Link href="/" className="flex items-center mb-4">
               <div className="relative w-10 h-10 mr-2">
                 <Image
-                  src="/placeholder.svg?height=40&width=40"
+                  src="/img/PAKISTAN-ARMY-LOGO.jpeg?height=40&width=40"
                   alt="Pakistan Air Defense Logo"
                   fill
                   className="object-contain"
                 />
               </div>
-              <span className="text-lg font-bold text-white">Pakistan Air Defense</span>
+              <span className="text-lg font-bold text-white">
+                Pakistan Air Defense
+              </span>
             </Link>
             <p className="text-gray-400">
-              Protecting Pakistan's airspace with advanced technology and highly trained personnel.
+              Protecting Pakistan's airspace with advanced technology and highly
+              trained personnel.
             </p>
             <div className="flex mt-4 space-x-4">
               <Link href="#" className="text-gray-400 hover:text-white">
@@ -50,22 +53,34 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/equipment" className="text-gray-400 hover:text-white">
+                <Link
+                  href="/equipment"
+                  className="text-gray-400 hover:text-white"
+                >
                   Equipment
                 </Link>
               </li>
               <li>
-                <Link href="/history" className="text-gray-400 hover:text-white">
+                <Link
+                  href="/history"
+                  className="text-gray-400 hover:text-white"
+                >
                   History
                 </Link>
               </li>
               <li>
-                <Link href="/training" className="text-gray-400 hover:text-white">
+                <Link
+                  href="/training"
+                  className="text-gray-400 hover:text-white"
+                >
                   Training
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-400 hover:text-white">
+                <Link
+                  href="/contact"
+                  className="text-gray-400 hover:text-white"
+                >
                   Contact
                 </Link>
               </li>
@@ -108,10 +123,11 @@ export default function Footer() {
         </div>
         <div className="pt-8 mt-8 border-t border-gray-800">
           <p className="text-sm text-center text-gray-400">
-            &copy; {new Date().getFullYear()} Pakistan Air Defense Forces. All rights reserved.
+            &copy; {new Date().getFullYear()} Pakistan Air Defense Forces. All
+            rights reserved.
           </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
