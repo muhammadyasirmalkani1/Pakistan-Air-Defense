@@ -19,7 +19,7 @@ export default function ArmyPage() {
             <Button asChild size="lg" className="bg-green-600 hover:bg-green-700">
               <Link href="/army/equipment">View Equipment</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+            <Button asChild size="lg" variant="outline" className="text-blue border-white hover:bg-white/10">
               <Link href="/recruitment">Join Pakistan Army</Link>
             </Button>
           </div>
@@ -105,7 +105,7 @@ export default function ArmyPage() {
             <div className="text-center">
               <div className="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full">
                 <Image
-                  src="/placeholder.svg?height=200&width=200"
+                  src="/img/General-Asim-Munir.jpg?height=200&width=200"
                   alt="Chief of Army Staff"
                   fill
                   className="object-cover"
@@ -118,7 +118,7 @@ export default function ArmyPage() {
             <div className="text-center">
               <div className="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full">
                 <Image
-                  src="/placeholder.svg?height=200&width=200"
+                  src="/img/Chairman-Joint-Chiefs-of-Staff-Committee.jpeg?height=200&width=200"
                   alt="Chairman Joint Chiefs of Staff Committee"
                   fill
                   className="object-cover"
@@ -131,7 +131,7 @@ export default function ArmyPage() {
             <div className="text-center">
               <div className="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full">
                 <Image
-                  src="/placeholder.svg?height=200&width=200"
+                  src="/img/Lieutenant-General.jpg?height=200&width=200"
                   alt="Chief of General Staff"
                   fill
                   className="object-cover"
@@ -152,7 +152,7 @@ export default function ArmyPage() {
             <div>
               <div className="relative w-full h-64 mb-6 overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/img/pakistani-army.webp?height=400&width=600"
                   alt="Armored Division"
                   fill
                   className="object-cover"
@@ -164,14 +164,14 @@ export default function ArmyPage() {
                 carriers, providing the force with significant offensive and defensive capabilities on the battlefield.
               </p>
               <Button asChild variant="outline" className="mt-4">
-                <Link href="/installations?branch=army">View Army Installations</Link>
+                <Link href="/installations">View Army Installations</Link>
               </Button>
             </div>
 
             <div>
               <div className="relative w-full h-64 mb-6 overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/img/army-zinda.jpg?height=400&width=600"
                   alt="Artillery Division"
                   fill
                   className="object-cover"
@@ -187,7 +187,7 @@ export default function ArmyPage() {
             <div>
               <div className="relative w-full h-64 mb-6 overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/img/Infantry.webp?height=400&width=600"
                   alt="Infantry Division"
                   fill
                   className="object-cover"
@@ -203,7 +203,7 @@ export default function ArmyPage() {
 
             <div>
               <div className="relative w-full h-64 mb-6 overflow-hidden rounded-lg">
-                <Image src="/placeholder.svg?height=400&width=600" alt="Special Forces" fill className="object-cover" />
+                <Image src="/img/Military-Capabilities-team.jpeg?height=400&width=600" alt="Special Forces" fill className="object-cover" />
               </div>
               <h3 className="mb-2 text-xl font-bold">Special Services Group (SSG)</h3>
               <p className="text-gray-600">
