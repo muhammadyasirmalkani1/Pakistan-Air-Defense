@@ -152,7 +152,7 @@ export default function AirForcePage() {
             <div>
               <div className="relative w-full h-64 mb-6 overflow-hidden rounded-lg">
                 <Image
-                  src="/img/JF-17.jpeg?height=400&width=600"
+                  src="/public/img/JF-17.jpeg?height=400&width=600"
                   alt="Fighter Aircraft"
                   fill
                   className="object-cover"
